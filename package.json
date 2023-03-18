@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+  },
+  "name": "my-es6-2015",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "myLgger.js"
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorum earum excepturi expedita id iusto natus nesciunt perspiciatis praesentium provident quam quasi ratione saepe sapiente soluta, unde vel voluptatem voluptates.  </div>
+</body>
+</html>
+<script>
+
+    document.querySelector("div").addEventListener("click", function({type,target}) {
+        console.log(type, target.tagName)
+    });
+
+</script>
