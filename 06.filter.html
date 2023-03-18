@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>filter</title>
+   <!-- <script type="text/javascript" src="06.filter.js"></script>-->
+</head>
+<body>
+<ul>
+    <li>apple</li>
+    <li>orange</li>
+    <li>banana</li>
+    <li>strawberry</li>
+</ul>
+<div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quos quia ducimus, natus, eum corporis sed blanditiis facere modi incidunt ut rem nobis fugiat excepturi officia dolorum odit earum perspiciatis!</div>
+</body>
+</html>
+<script>
+/*
+    filter, includes, from을 사용해서 문자열 'e'가 포함된 노드로
+    구성된 배열을 만들엇 반환한기
+*/
+
+    function print() {
+        let list = document.querySelectorAll("li")//li노드로 구성된 배열
+        let listArray = Array.from(list);//노드를 배열로 바꾼다.
+        let eArray = listArray.filter(function (v) { //v는 노드
+            return v.innerText.includes("e") //dom에 있는 속성을 이용한다.
+        })
+        // console.log(toString.call(listArray),);,
+        // console.log(eArray.length)
+        return eArray;
+    }
+    console.log(print());
+</script>
